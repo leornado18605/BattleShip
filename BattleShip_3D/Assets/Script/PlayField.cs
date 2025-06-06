@@ -1,130 +1,94 @@
-﻿using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
-public class PlayField : MonoBehaviour
+public class PlayField: MonoBehaviour
 {
-    public GameObject tilePrefab; // Sửa lại tên biến từ titlePrefabs thành tilePrefab cho rõ nghĩa
-    List<GameObject> tileList = new List<GameObject>(); // Sửa lại tên biến từ titleList thành tileList
-
-    List<TileInfo> tileInfoList = new List<TileInfo>();
-    private void Start()
-    {
-        tileList.Clear();
-        tileInfoList.Clear();
-
-        // Fill GameObject
-        foreach (Transform t in transform)
-        {
-            if (t != transform)
-            {
-                tileList.Add(t.gameObject);
-            }
-        }
-
-        // Fill tile infos
-        foreach (Transform g in transform)
-        {
-            TileInfo tileInfo = g.GetComponent<TileInfo>();
-            if (tileInfo != null) // Thêm kiểm tra null để tránh lỗi
-            {
-                tileInfoList.Add(tileInfo);
-            }
-        }
-    }
+    [SerializeField] private GameObject tilePrefab; // Prefab for creating tiles
+    private readonly List<GameObject> tileList = new List<GameObject>(); // List of tile GameObjects
+    private readonly List<TileInfo> tileInfoList = new List<TileInfo>(); // List of tile information components
 
     private void Awake()
     {
         CreateTiles();
     }
-
+    /// Creates a 10x10 grid of tiles, clearing any existing tiles first
     private void CreateTiles()
     {
-        // Xóa các tile hiện có nếu có
-        for (int i = 0; i < tileList.Count; i++)
+        // Clear existing tiles
+        foreach (GameObject tile in tileList)
         {
-            if (tileList[i] != null)
+            if (tile != null)
             {
-                Destroy(tileList[i]);
+                Destroy(tile);
             }
         }
         tileList.Clear();
-        tileInfoList.Clear(); // Thêm: Xóa tileInfoList để đồng bộ
+        tileInfoList.Clear();
 
-        // Kiểm tra prefab có tồn tại không
+        // Validate tile prefab
         if (tilePrefab == null)
         {
-            Debug.LogError("Tile prefab is not assigned!");
+            Debug.LogError("Tile prefab is not assigned in PlayField!", this);
             return;
         }
 
-        // Tạo các tile mới
+        // Create new 10x10 grid of tiles
         for (int i = 0; i < 10; i++)
         {
             for (int j = 0; j < 10; j++)
             {
-                // Căn chỉnh vị trí tile chính xác vào trung tâm ô
                 Vector3 pos = new Vector3(transform.position.x + i + 0.5f, 0, transform.position.z + j + 0.5f);
-                GameObject tile = Instantiate(tilePrefab, pos, Quaternion.identity, transform); // Gán parent là transform của PlayField
-
-                TileInfo tileInfo = tile.GetComponent<TileInfo>();
-                if (tileInfo != null)
+                GameObject tile = Instantiate(tilePrefab, pos, Quaternion.identity, transform);
+                
+                if (tile.TryGetComponent(out TileInfo tileInfo))
                 {
                     tileInfo.SetTileInfo(i, j);
-                    tileInfoList.Add(tileInfo); // Thêm tileInfo vào danh sách
+                    tileInfoList.Add(tileInfo);
+                    tileList.Add(tile);
                 }
                 else
                 {
-                    Debug.LogWarning("Tile prefab doesn't have TileInfo component!");
+                    Debug.LogWarning($"Tile prefab at ({i},{j}) is missing ", tile);
+                    Destroy(tile); 
                 }
-
-                tileList.Add(tile);
             }
         }
     }
+    /// <param name="x">X coordinate in grid</param>
+    /// <param name="z">Z coordinate in grid</param>
 
-    // Thêm phương thức để lấy vị trí trung tâm của ô dựa trên tọa độ
     public Vector3 GetTileCenter(int x, int z)
     {
         return new Vector3(transform.position.x + x + 0.5f, 0, transform.position.z + z + 0.5f);
     }
 
-    // Thêm phương thức để kiểm tra và đồng bộ hóa trạng thái tile
+    /// Checks if a tile is valid and exists in the playfield
     public bool IsTileAvailable(TileInfo info)
     {
-        if (info == null || !tileInfoList.Contains(info))
-        {
-            return false;
-        }
-        return true;
+        return info != null && tileInfoList.Contains(info);
     }
 
     public bool RequestTile(TileInfo info)
     {
-        // Thêm kiểm tra để đảm bảo tile hợp lệ trước khi chấp nhận
-        if (IsTileAvailable(info))
-        {
-            return tileInfoList.Contains(info);
-        }
-        return false;
-    }
-
-    // Giữ lại OnDrawGizmos nếu bạn vẫn muốn có chức năng fill trong Editor
-    private void OnDrawGizmos()
-    {
-        // Bạn có thể bỏ phần này hoặc giữ lại nếu muốn
+        return IsTileAvailable(info);
     }
 
     public TileInfo GetTileInfo(int x, int z)
     {
-        for(int i = 0; i < tileInfoList.Count; i++)
+        // Validate coordinates
+        if (x < 0 || x >= 10 || z < 0 || z >= 10)
         {
-            if (tileInfoList[i].xPos == i && tileInfoList[i].zPos == z)
+            Debug.LogWarning($"Invalid tile coordinates ({x},{z}) requested!");
+            return null;
+        }
+
+        foreach (TileInfo tileInfo in tileInfoList)
+        {
+            if (tileInfo.xPos == x && tileInfo.zPos == z)
             {
-                return tileInfoList[i];
+                return tileInfo;
             }
-        }    
+        }
         return null;
     }
 }
