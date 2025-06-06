@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|D:\\Unity_Game\\BattleShip\\BattleShip_3D\\assets\\script\\animateuv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\animateuv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|D:\\Unity_Game\\BattleShip\\BattleShip_3D\\assets\\script\\ghostbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ghostbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|D:\\Unity_Game\\BattleShip\\BattleShip_3D\\assets\\script\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|D:\\Unity_Game\\BattleShip\\BattleShip_3D\\assets\\script\\shipbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\shipbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|d:\\unity_game\\battleship\\battleship_3d\\assets\\script\\tileinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\tileinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|D:\\Unity_Game\\BattleShip\\BattleShip_3D\\assets\\script\\placingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\placingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|D:\\Unity_Game\\BattleShip\\BattleShip_3D\\assets\\script\\playfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playfield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|D:\\Unity_Game\\BattleShip\\BattleShip_3D\\assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0379AA7-3C53-8858-16C9-4A26BE2CC9C1}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameManager.cs",
+              "ToolTip": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Script\\GameManager.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAUwNsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T17:48:41.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayField.cs",
+              "DocumentMoniker": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\PlayField.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PlayField.cs",
+              "ToolTip": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\PlayField.cs",
+              "RelativeToolTip": "Assets\\Script\\PlayField.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAMwHwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:00:37.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlacingManager.cs",
+              "DocumentMoniker": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\PlacingManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PlacingManager.cs",
+              "ToolTip": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\PlacingManager.cs",
+              "RelativeToolTip": "Assets\\Script\\PlacingManager.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAUwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:29:37.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TileInfo.cs",
+              "DocumentMoniker": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\TileInfo.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\TileInfo.cs",
+              "ToolTip": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\TileInfo.cs",
+              "RelativeToolTip": "Assets\\Script\\TileInfo.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAgwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T10:45:44.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShipBehaviour.cs",
+              "DocumentMoniker": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\ShipBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ShipBehaviour.cs",
+              "ToolTip": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\ShipBehaviour.cs",
+              "RelativeToolTip": "Assets\\Script\\ShipBehaviour.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T13:21:34.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\Tile.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Tile.cs",
+              "ToolTip": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\Tile.cs",
+              "RelativeToolTip": "Assets\\Script\\Tile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T17:40:11.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GhostBehaviour.cs",
+              "DocumentMoniker": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\GhostBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GhostBehaviour.cs",
+              "ToolTip": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\GhostBehaviour.cs",
+              "RelativeToolTip": "Assets\\Script\\GhostBehaviour.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T12:14:42.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnimateUV.cs",
+              "DocumentMoniker": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\AnimateUV.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\AnimateUV.cs",
+              "ToolTip": "D:\\Unity_Game\\BattleShip\\BattleShip_3D\\Assets\\Script\\AnimateUV.cs",
+              "RelativeToolTip": "Assets\\Script\\AnimateUV.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:18:59.917Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 309,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
