@@ -151,15 +151,15 @@ public class GameManager : MonoBehaviour
                 break;
             case GameStates.SHOOTING:
                 {
-                    HideAllPanels(); // Ẩn tất cả panel trước
-                    players[activePlayer].shootPanel.SetActive(true); // Hiển thị shootPanel của người chơi hiện tại
+                    HideAllPanels(); // hide
+                    players[activePlayer].shootPanel.SetActive(true); // display shoot panel
 
-                    // Ẩn shootPanel của người chơi không hoạt động
+                    // hide shoot panel of player not work
                     int otherPlayer = (activePlayer + 1) % 2;
                     players[otherPlayer].shootPanel.SetActive(false);
 
-                    // Ẩn tàu của người chơi bị bắn
-                    if (activePlayer == 0) // Khi Player 1 bắn, ẩn tàu của Player 2
+                    // hide ship of player is shooted
+                    if (activePlayer == 0) // wwhen 1 is shoooted, hide 2
                     {
                         foreach (var ship in players[1].placedShipList)
                         {
@@ -169,7 +169,7 @@ public class GameManager : MonoBehaviour
                             }
                         }
                     }
-                    else if (activePlayer == 1) // Khi Player 2 bắn, ẩn tàu của Player 1
+                    else if (activePlayer == 1) // when 2 , hide 1
                     {
                         foreach (var ship in players[0].placedShipList)
                         {
@@ -181,7 +181,7 @@ public class GameManager : MonoBehaviour
                     }
 
                     StartCoroutine(MoveCamera(battleCamPosition));
-                    // Không đặt lại gameStates = GameStates.IDLE để giữ trạng thái SHOOTING, chờ tương tác
+                    
                 }
                 break;
         }
