@@ -259,7 +259,7 @@ public class GameManager : MonoBehaviour
     {
         foreach(var ship in players[activePlayer].placedShipList)
         {
-            ship.GetComponent<MeshRenderer>().enabled = true;
+            ship.GetComponent<MeshRenderer>().enabled = false;
         }
     }
     //samsame
